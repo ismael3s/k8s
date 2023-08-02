@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-cep
+spec:
+  selector:
+    matchLabels:
+      app: go-cep
+  template:
+    metadata:
+      labels:
+        app: go-cep
+    spec:
+      containers:
+      - name: go-cep
+        image: ismael3s/go-cep:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
