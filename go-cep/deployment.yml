@@ -12,11 +12,11 @@ spec:
         app: go-cep
     spec:
       containers:
-      - name: go-cep
-        image: ismael3s/go-cep:latest
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 8080
+        - name: go-cep
+          image: ismael3s/go-cep:5ec6418
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
