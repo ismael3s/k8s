@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: go-cep
-          image: ismael3s/go-cep:f4aedc4
+          image: ismael3s/go-cep:0a2f6e6
           resources:
             limits:
               memory: "128Mi"
