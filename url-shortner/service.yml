@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: urls-shortner
+spec:
+  selector:
+    app: url-shortner
+  ports:
+  - port: 4000
+    targetPort: 4000

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: url-shortner
+spec:
+  selector:
+    matchLabels:
+      app: url-shortner
+  template:
+    metadata:
+      labels:
+        app: url-shortner
+    spec:
+      containers:
+      - name: url-shortner
+        image: ismael3s/url-shortner:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 4000
