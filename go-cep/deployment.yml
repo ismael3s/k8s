@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: go-cep
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: go-cep
