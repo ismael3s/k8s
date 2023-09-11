@@ -6,7 +6,7 @@ metadata:
     name: go-cep
 spec:
   rules:
-  - host: go-cep.frontend
+  - host: go-cep.frontend.com
     http:
       paths:
       - pathType: Prefix
